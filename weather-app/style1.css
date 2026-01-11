@@ -7,50 +7,50 @@
     width: 100%;
     height: 100vh;
     background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
- }
+}
 
- .weather-container{
+.weather-container{
     color: white;
- }
+}
 
- .temperature{
+.temperature{
     font-size: 5rem;
- }
+}
 
- .time-location{
-    font-family: 2rem;
- }
+.time-location{
+    font-size: 2rem;
+}
 
- .condition{
-    margin: 5px;
-    margin-left: 3px;
- }
-
+.condition{
+    font-size: 2rem;
+}
 
 nav{
     height: 100px;
     margin: 5rem;
 }
-
 .search-area{
     padding: 1rem 0;
     outline: none;
     border: none;
-    color: white;
+    font-size: 1rem;
     background-color: black;
-    font-size: 1.1rem;
-    border-bottom: 1px solid white;
+    color: white;
+    border-bottom: 1px solid white ;
 }
 
 nav form button{
-    background-color:white;
-    margin-top: 1rem ;
-    font-size: 1.1rem;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    margin: 2rem 1rem;
     outline: none;
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
+    border-radius: 15px;
 }
