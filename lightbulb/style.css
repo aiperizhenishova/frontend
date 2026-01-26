@@ -52,13 +52,14 @@ body{
 }
 
 .bulb-container{
-    width: 60%;
-    height: 30%;
+    width: 40%;
+    height: 100vh;
+    position: relative;
 }
 
 
 .wire{
-    height: 200px;
+    height: 130px;
     width: 10px;
     background: grey;
     margin: 0 auto;
@@ -100,4 +101,30 @@ body{
     opacity: 0.5;
     border-radius: 50%;
     margin-top: -5px;
+}
+
+.bulb-top{
+    width: 30px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: lightgrey;
+    margin-top: -8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bulb-bottom{
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: lightgrey;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: -4px;
+}
+
+.bulbOn{
+    background: lightyellow;
+    box-shadow: 0px 10px 100px 10px lightyellow;
 }
