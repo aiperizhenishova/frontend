@@ -124,7 +124,21 @@ body{
     margin-top: -4px;
 }
 
+.text{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    transform: translateY(350%);
+    text-shadow: 5px 4px 10px lightyellow;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.text.show{
+    opacity: 1;
+}
+
+
 .bulbOn{
     background: lightyellow;
-    box-shadow: 0px 10px 100px 10px lightyellow;
+    box-shadow: 0px 10px 120px 10px lightyellow;
 }

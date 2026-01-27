@@ -15,6 +15,7 @@
         <div class="socket-back"></div>
         <div class="bulb-top"></div>
         <dib class="bulb-bottom"></dib>
+        <div class="text">You are the best!</div>
     </div>
 
 
@@ -29,23 +30,32 @@
 </body>
 <script>
 
-   let isOpen = false;
-   let btn = document.querySelector(".switch");
-   let bulbTop = document.querySelector(".bulb-top");
-   let bulbBottom = document.querySelector(".bulb-bottom");
+    let isOpen = false;
+    let btn = document.querySelector(".switch");
+    let topBulb = document.querySelector(".bulb-top");
+    let bottomBulb = document.querySelector(".bulb-bottom");
+    let textGlow = document.querySelector(".text");
 
-   btn.addEventListener("click", function(){
-    if(isOpen){
-        btn.classList.remove("on");
-        bulbTop.classList.remove("bulbOn");
-        bulbBottom.classList.remove("bulbOn");
-    }else{
-       btn.classList.add("on");
-       bulbTop.classList.add("bulbOn");
-       bulbBottom.classList.add("bulbOn"); 
-    }
-    isOpen = !isOpen
-   })
+    btn.addEventListener("click", function(){
+        if(isOpen){
+            btn.classList.remove("on");
+            topBulb.classList.remove("bulbOn");
+            bottomBulb.classList.remove("bulbOn");
+            textGlow.classList.remove("show");
+        }else{
+            btn.classList.add("on");
+            topBulb.classList.add("bulbOn");
+            bottomBulb.classList.add("bulbOn");
+            textGlow.classList.add("show");
+        }
+        isOpen = !isOpen;
+    })
    
 </script>
 </html>
+
+
+
+
+
+
